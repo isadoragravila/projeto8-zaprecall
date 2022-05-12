@@ -8,7 +8,7 @@ body {
 
 .tela-inicio {
     background-color: #FB6B6B;
-    height: 640px;
+    height: 100vh;
     width: 375px;
     display: flex;
     flex-direction: column;
@@ -48,4 +48,84 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+}
+
+.deck {
+    background-color: #FB6B6B;
+    width: 375px;
+    height: 100%;
+    padding-bottom: 65px;
+}
+
+.deck header {
+    width: 375px;
+    height: 153px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deck header img {
+    width: 52px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.deck header h2 {
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.deck .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions .question {
+    width: 300px;
+    height: 65px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+
+.questions .question p {
+    font-family: 'Recursive';
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+}
+
+.questions .question ion-icon {
+    font-size: 25px;
+    color: #333333;
+}
+
+.deck footer {
+    width: 375px;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.deck footer p {
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
 }
