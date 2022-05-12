@@ -79,13 +79,13 @@ body {
     color: #FFFFFF;
 }
 
-.deck .questions {
+.deck .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.questions .question {
+.cards .card {
     width: 300px;
     height: 65px;
     background-color: #ffffff;
@@ -98,14 +98,14 @@ body {
     margin-bottom: 25px;
 }
 
-.questions .question p {
+.cards .card p {
     font-family: 'Recursive';
     font-weight: 700;
     font-size: 16px;
     color: #333333;
 }
 
-.questions .question ion-icon {
+.cards .card ion-icon {
     font-size: 25px;
     color: #333333;
 }
