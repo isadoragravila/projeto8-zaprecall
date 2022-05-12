@@ -1,42 +1,16 @@
 import React from "react";
+import Flashcards from "./Flashcards";
 
 const flashcards = [
-    { number: 1, question: "O que é JSX?" },
-    { number: 2, question: "O React é __" },
-    { number: 3, question: "Componentes devem iniciar com __" },
-    { number: 4, question: "Podemos colocar __ dentro do JSX" },
-    { number: 5, question: "O ReactDOM nos ajuda __" },
-    { number: 6, question: "Usamos o npm para __" },
-    { number: 7, question: "Usamos props para __" },
-    { number: 8, question: "Usamos estado (state) para __" }
+    { number: 1, question: "O que é JSX?", answer: "Uma extensão de linguagem do JavaScript" },
+    { number: 2, question: "O React é __", answer: "Uma biblioteca JavaScript para construção de interfaces" },
+    { number: 3, question: "Componentes devem iniciar com __", answer: "Letra maiúscula" },
+    { number: 4, question: "Podemos colocar __ dentro do JSX", answer: "Expressões" },
+    { number: 5, question: "O ReactDOM nos ajuda __", answer: "Interagindo com a DOM para colocar componentes React na mesma" },
+    { number: 6, question: "Usamos o npm para __", answer: "Gerenciar os pacotes necessários e suas dependências" },
+    { number: 7, question: "Usamos props para __", answer: "Passar diferentes informações para componentes " },
+    { number: 8, question: "Usamos estado (state) para __", answer: "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" }
 ];
-
-function Flashcard({ number, question }) {
-    const [clique, setClique] = React.useState("card");
-    return (
-        <div className="cards">
-            {clique === "card" ? <Card number={number} setClique={setClique} /> : <Question question={question} /> }
-        </div>
-    );
-}
-
-function Card({ number, setClique }) {
-    return (
-        <div className="card">
-            <p>Pergunta {number}</p>
-            <ion-icon name="play-outline" onClick={() => setClique("question")}></ion-icon>
-        </div>
-    );
-}
-
-function Question({ question }) {
-    return (
-        <div className="question">
-            <p>{question}</p>
-            <img src="./images/setinha.png" alt="setinha" />
-        </div>
-    );
-}
 
 export default function Deck() {
     return (
@@ -45,7 +19,7 @@ export default function Deck() {
                 <img src="./images/logo.png" alt="logo" />
                 <h2>ZapRecall</h2>
             </header>
-            {flashcards.map((flashcard, index) => <Flashcard key={index} number={flashcard.number} question={flashcard.question} />)}
+            {flashcards.map((flashcard, index) => <Flashcards key={index} number={flashcard.number} question={flashcard.question} answer={flashcard.answer} />)}
             <footer>
                 <p>0/{flashcards.length} CONCLUÍDOS</p>
             </footer>

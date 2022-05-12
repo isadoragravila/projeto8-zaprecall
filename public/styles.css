@@ -132,13 +132,15 @@ body {
 
 .cards .question {
     width: 300px;
-    height: 131px;
+    min-height: 131px;
     background: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
-    padding: 18px 15px 0 15px;
+    padding: 18px 15px 6px 15px;
     margin-bottom: 25px;
 }
 
@@ -158,3 +160,37 @@ body {
     right: 15px;
 }
 
+.cards .answer {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .answer .botao {
+    width: 85px;
+    height: 37px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer .botao p {
+    font-family: 'Recursive';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 0 10px;
+    color: #FFFFFF;
+}
+
+.vermelho {
+    background-color: #FF3030;
+}
+.laranja {
+    background-color: #FF922E;
+}
+.verde {
+    background-color: #2FBE34;
+}
