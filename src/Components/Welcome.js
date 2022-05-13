@@ -9,5 +9,5 @@ export default function Welcome ({ setTela }) {
                 <p>Iniciar Recall!!</p>
             </div>
         </div>
-    )
+    );
 }

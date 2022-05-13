@@ -1,34 +1,26 @@
 import React from "react";
+import Cards from "./Cards";
 import Questions from "./Questions";
+import Answers from "./Answers";
 
-export default function Flashcards({
-  number,
-  question,
-  answer,
-  arrIcons,
-  setArrIcons
-}) {
-  const [clique, setClique] = React.useState("card");
+export default function Flashcards({ number, question, answer, arrIcons, setArrIcons }) {
+  const [card, setCard] = React.useState(true);
+  const [type, setType] = React.useState(true);
+  const [color, setColor] = React.useState("red");
+  const [icone, setIcone] = React.useState("close-circle");
+
   return (
     <div className="cards">
-      {clique === "card" ? (
-        <div className="card">
-          <p>Pergunta {number}</p>
-          <ion-icon
-            name="play-outline"
-            onClick={() => setClique("question")}
-          ></ion-icon>
-        </div>
+      {card ? (
+        <Cards number={number} setCard={setCard} color={color} icone={icone} type={type} />
       ) : (
-        <Questions
-          question={question}
-          answer={answer}
-          clique={clique}
-          setClique={setClique}
-          number={number}
-          arrIcons={arrIcons}
-          setArrIcons={setArrIcons}
-        />
+        <>
+          {type ? (
+            <Questions question={question} setType={setType} />
+          ) : (
+            <Answers answer={answer} setCard={setCard} arrIcons={arrIcons} setArrIcons={setArrIcons} setIcone={setIcone} setColor={setColor} />
+          )}
+        </>
       )}
     </div>
   );

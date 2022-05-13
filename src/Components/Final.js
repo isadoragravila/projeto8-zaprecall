@@ -1,4 +1,3 @@
-import React from "react";
 import party from "../Assets/images/party.png";
 import sad from "../Assets/images/sad.png";
 
@@ -16,9 +15,7 @@ export default function Final({ arrIcons }) {
     <div className="final">
       <div className="titulo">
         <img src={emoji} alt="emoji" />
-        <p>
-          <strong>{title}</strong>
-        </p>
+        <p><strong>{title}</strong></p>
       </div>
       <p>{phrase}</p>
     </div>
