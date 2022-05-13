@@ -1,85 +1,85 @@
 body {
     background-color: gray;
-}
-
-* {
+  }
+  
+  * {
     box-sizing: border-box;
-}
-
-.tela-inicio {
-    background-color: #FB6B6B;
+  }
+  
+  .tela-inicio {
+    background-color: #fb6b6b;
     height: 100vh;
     width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 148px 0 0 0;
-}
-
-.tela-inicio img {
+  }
+  
+  .tela-inicio img {
     width: 136px;
     height: 161px;
     margin-bottom: 13px;
-}
-
-.tela-inicio h1 {
-    font-family: 'Righteous';
+  }
+  
+  .tela-inicio h1 {
+    font-family: "Righteous";
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 30px;
-}
-
-.tela-inicio .botao {
+  }
+  
+  .tela-inicio .botao {
     width: 246px;
     height: 54px;
     background-color: #ffffff;
-    border: 1px solid #D70900;
+    border: 1px solid #d70900;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.tela-inicio .botao p {
-    font-family: 'Recursive';
-    color: #D70900;
+  }
+  
+  .tela-inicio .botao p {
+    font-family: "Recursive";
+    color: #d70900;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-}
-
-.deck {
-    background-color: #FB6B6B;
+  }
+  
+  .deck {
+    background-color: #fb6b6b;
     width: 375px;
     height: 100%;
     padding-bottom: 65px;
-}
-
-.deck header {
+  }
+  
+  .deck header {
     width: 375px;
     height: 153px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.deck header img {
+  }
+  
+  .deck header img {
     width: 52px;
     height: 60px;
     margin-right: 20px;
-}
-
-.deck header h2 {
-    font-family: 'Righteous';
+  }
+  
+  .deck header h2 {
+    font-family: "Righteous";
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
-    color: #FFFFFF;
-}
-
-.deck footer {
+    color: #ffffff;
+  }
+  
+  .deck footer {
     width: 375px;
     height: 70px;
     background-color: #ffffff;
@@ -89,23 +89,23 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-}
-
-.deck footer p {
-    font-family: 'Recursive';
+  }
+  
+  .deck footer p {
+    font-family: "Recursive";
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #333333;
-}
-
-.deck .cards {
+  }
+  
+  .deck .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.cards .card {
+  }
+  
+  .cards .card {
     width: 300px;
     height: 65px;
     background-color: #ffffff;
@@ -116,24 +116,24 @@ body {
     justify-content: space-between;
     padding: 0 15px;
     margin-bottom: 25px;
-}
-
-.cards .card p {
-    font-family: 'Recursive';
+  }
+  
+  .cards .card p {
+    font-family: "Recursive";
     font-weight: 700;
     font-size: 16px;
     color: #333333;
-}
-
-.cards .card ion-icon {
+  }
+  
+  ion-icon {
     font-size: 25px;
     color: #333333;
-}
-
-.cards .question {
+  }
+  
+  .cards .question {
     width: 300px;
     min-height: 131px;
-    background: #FFFFD5;
+    background: #ffffd5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     display: flex;
@@ -142,55 +142,75 @@ body {
     position: relative;
     padding: 18px 15px 6px 15px;
     margin-bottom: 25px;
-}
-
-.cards .question p {
-    font-family: 'Recursive';
+  }
+  
+  .cards .question p {
+    font-family: "Recursive";
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #333333;
-}
-
-.cards .question img {
+  }
+  
+  .cards .question img {
     width: 30px;
     height: 20px;
     position: absolute;
     bottom: 6px;
     right: 15px;
-}
-
-.cards .answer {
+  }
+  
+  .cards .answer {
     width: 270px;
     display: flex;
     justify-content: space-between;
-}
-
-.cards .answer .botao {
+  }
+  
+  .cards .answer .botao {
     width: 85px;
     height: 37px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.answer .botao p {
-    font-family: 'Recursive';
+  }
+  
+  .answer .botao p {
+    font-family: "Recursive";
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     text-align: center;
     padding: 0 10px;
-    color: #FFFFFF;
-}
-
-.vermelho {
-    background-color: #FF3030;
-}
-.laranja {
-    background-color: #FF922E;
-}
-.verde {
-    background-color: #2FBE34;
-}
+    color: #ffffff;
+  }
+  
+  .vermelho {
+    background-color: #ff3030;
+  }
+  .laranja {
+    background-color: #ff922e;
+  }
+  .verde {
+    background-color: #2fbe34;
+  }
+  
+  .riscado {
+    text-decoration: line-through;
+  }
+  
+  .cards .card p.red,
+  ion-icon[name="close-circle"] {
+    color: #ff3030;
+  }
+  
+  .cards .card p.orange,
+  ion-icon[name="help-circle"] {
+    color: #ff922e;
+  }
+  
+  .cards .card p.green,
+  ion-icon[name="checkmark-circle"] {
+    color: #2fbe34;
+  }
+  
