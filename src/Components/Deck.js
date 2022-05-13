@@ -33,6 +33,12 @@ const flashcards = [
   }
 ];
 
+flashcards.sort(comparador);
+
+function comparador() {
+  return Math.random() - 0.5;
+}
+
 export default function Deck() {
   const [arrIcons, setArrIcons] = React.useState([]);
   return (
