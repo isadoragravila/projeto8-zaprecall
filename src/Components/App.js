@@ -9,7 +9,7 @@ export default function App() {
 
   return (
         <>
-            {tela === "welcome" ? <Welcome setTela={setTela} /> : <Deck />}
+            {tela === "welcome" ? <Welcome setTela={setTela} /> : <Deck setTela={setTela} />}
         </>
   );
 }
