@@ -241,3 +241,22 @@ footer .final .titulo img {
   height: 23px;
   margin-right: 12px;
 }
+
+footer .botao-reiniciar {
+  width: 167px;
+  height: 32px;
+  background-color: #fb6b6b;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+footer .botao-reiniciar p {
+  font-family: "Recursive";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
