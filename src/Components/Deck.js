@@ -14,10 +14,11 @@ const flashcards = [
   { question: "Usamos estado (state) para __", answer: "Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" }
 ];
 
-flashcards.sort(() => Math.random() - 0.5);
-
-export default function Deck() {
+export default function Deck({ setTela }) {
   const [arrIcons, setArrIcons] = React.useState([]);
+  if (arrIcons.length === 0) {
+    flashcards.sort(() => Math.random() - 0.5);
+  }
   return (
     <div className="deck">
       <header>
@@ -26,7 +27,7 @@ export default function Deck() {
       </header>
       {flashcards.map((flashcard, index) => (
         <Flashcards key={index} number={index + 1} question={flashcard.question} answer={flashcard.answer} arrIcons={arrIcons} setArrIcons={setArrIcons} /> ))}
-      <Footer flashcards={flashcards} arrIcons={arrIcons} />
+      <Footer flashcards={flashcards} arrIcons={arrIcons} setTela={setTela} />
     </div>
   );
 }
