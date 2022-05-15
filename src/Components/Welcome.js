@@ -2,7 +2,7 @@
 import React from "react";
 import logo from "../Assets/images/logo.png";
 
-export default function Welcome ({ setTela }) {
+export default function Welcome({ setTela, setMeta }) {
   const [botao, setBotao] = React.useState(false);
 
   function inputValue(valor) {
