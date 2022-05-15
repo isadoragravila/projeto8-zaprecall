@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&family=Righteous&family=Roboto&display=swap");
+
 body {
   background-color: #ffffff;
 }
@@ -32,27 +34,36 @@ strong {
   font-size: 36px;
   line-height: 45px;
   margin-bottom: 30px;
+  color: #ffffff;
 }
 
 .tela-inicio .botao {
   width: 246px;
   height: 54px;
-  background-color: #ffffff;
-  border: 1px solid #d70900;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #e8e8e8;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .tela-inicio .botao p {
   font-family: "Recursive";
-  color: #d70900;
+  color: #c0c0c0;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}
+
+.tela-inicio .botao.ativo {
+  background-color: #ffffff;
+  border: 1px solid #d70900;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.tela-inicio .botao.ativo p {
+  color: #d70900;
 }
 
 .deck {
@@ -259,4 +270,24 @@ footer .botao-reiniciar p {
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
+}
+
+input.meta {
+  width: 246px;
+  height: 43px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  outline: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fb6b6b;
+  opacity: 0.9;
+  text-indent: 10px;
+}
+
+input::placeholder {
+  color: #adadad;
 }
